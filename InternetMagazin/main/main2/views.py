@@ -4,7 +4,17 @@ from django.shortcuts import render
 # Create your views here.
 
 def index(request):
-    return render(request, )('Главная Страница')
+    context = {
+        'title': 'ДомСтрой - Главная',
+        'content': 'Интернет-магазин мебели "ДомСтрой"',
+    }
+    return render(request, 'main2/index.html', context)
 
 def about(request):
-    return HttpResponse('О нас')
+    context = {
+        'title': 'ДомСтрой - О нас',
+        'content': 'О нас',
+        'text_on_page': 'Текст о нас'
+        
+    }
+    return render(request, 'main2/about.html', context)

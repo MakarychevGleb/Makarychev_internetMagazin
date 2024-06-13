@@ -1,0 +1,20 @@
+{% extends "main2/base.html" %}
+{% load static %}
+
+{% block scss %}
+    <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
+{% endblock %}
+
+{% block content %}
+    <h1 class="mt-5 pt-5"><strong>{{ content }}</strong></h1>
+{% endblock %}
+
+{% block footer %}
+<footer class="py-4 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">"Ногинский колледж" | Макарычев Глеб Андреевич | +7 (903) 616-49-19</p>
+        <br>
+        <p class="m-0 text-center text-white">2024</p>
+    </div>
+</footer>
+{% endblock %}

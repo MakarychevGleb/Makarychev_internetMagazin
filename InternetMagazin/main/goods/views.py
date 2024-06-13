@@ -1,8 +1,10 @@
 from django.shortcuts import render
 
+import goods
+
 # Create your views here.
 def catalog(request):
-    return render()
+    return render(request, 'goods/catalog.html')
 
-def products(request):
-    return render()
+def product(request):
+    return render(request, 'goods/product.html')

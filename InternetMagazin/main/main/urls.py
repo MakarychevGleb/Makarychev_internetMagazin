@@ -17,15 +17,17 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls.static import static
 
 from main import settings 
-from django.conf.urls.static import static
+
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main2.urls', namespace='main2')),
     path('catalog/', include('goods.urls', namespace='catalog')),
+    path('user/', include('users.urls', namespace='user')),
 ]
 
 if settings.DEBUG:

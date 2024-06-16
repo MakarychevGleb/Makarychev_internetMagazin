@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.postgres',
 
     'main2',
     'goods',
@@ -81,12 +82,22 @@ WSGI_APPLICATION = 'main.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'home',
+        'USER': 'home',
+        'PASSWORD': 'home',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
-
-
+# 'NAME': 'postgres',
+# 'USER': 'postgres',
+# 'PASSWORD': 'root',
+# 'HOST': 'localhost',(127.0.0.1)
+# 'PORT': '5432',
+# NUMBER port 5435
+# timout 180c
+# python -m pip install psycopg2
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 

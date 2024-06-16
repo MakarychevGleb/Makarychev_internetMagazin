@@ -1,7 +1,7 @@
 from django.contrib import auth
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
-from audioop import reverse
+from django.urls import reverse
 
 from users.forms import UserLoginForm
 # если данные валидны - верны то аутонтефицируемся перенаправляем
@@ -15,7 +15,7 @@ def login(request):
             user = auth.authenticate(username=username, password=password)
             if user:
                 auth.login(request, user)
-                return HttpResponseRedirect(reverse('main2 index'))
+                return HttpResponseRedirect(reverse('main2:index'))
     else:
         form = UserLoginForm()
 

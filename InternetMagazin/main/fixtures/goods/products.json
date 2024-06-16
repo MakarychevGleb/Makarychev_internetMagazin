@@ -1,1 +1,170 @@
-[{"model": "goods.products", "pk": 1, "fields": {"name": "╨з╨░╨╣╨╜╤Л╨╣ ╤Б╤В╨╛╨╗╨╕╨║ ╨╕ ╤В╤А╨╕ ╤Б╤В╤Г╨╗╨░", "slug": "chajnyj-stolik-i-tri-stula", "description": "╨Ъ╨╛╨╝╨┐╨╗╨╡╨║╤В ╨╕╨╖ ╤В╤А╤С╤Е ╤Б╤В╤Г╨╗╤М╨╡╨▓ ╨╕ ╨┤╨╕╨╖╨░╨╣╨╜╨╡╤А╤Б╨║╨╕╨╣ ╤Б╤В╨╛╨╗╨╕╨║ ╨┤╨╗╤П ╨│╨╛╤Б╤В╨╕╨╜╨╜╨╛╨╣ ╨║╨╛╨╝╨╜╨░╤В╤Л.", "image": "goods_images/set_of_tea_table_and_three_chairs.jpg", "price": "15000.00", "discount": "5.00", "quantity": 10, "category": 6}}, {"model": "goods.products", "pk": 2, "fields": {"name": "╨Ъ╨╕╤В╨░╨╣╤Б╨║╨╕╨╣ ╤Б╤В╨╛╨╗╨╕╨║ ╨╕ ╨┤╨▓╨░ ╤Б╤В╤Г╨╗╨░", "slug": "kitajskij-stolik-i-dva-stula", "description": "╨Э╨░╨▒╨╛╤А ╨╕╨╖ ╤Б╤В╨╛╨╗╨░ ╨╕ ╨┤╨▓╤Г╤Е ╤Б╤В╤Г╨╗╤М╨╡╨▓ ╨▓ ╨╝╨╕╨╜╨╕╨╝╨░╨╗╨╕╤Б╤В╨╕╤З╨╡╤Б╨║╨╛╨╝ ╤Б╤В╨╕╨╗╨╡.", "image": "goods_images/set_of_tea_table_and_two_chairs.jpg", "price": "12000.00", "discount": "0.00", "quantity": 10, "category": 6}}, {"model": "goods.products", "pk": 3, "fields": {"name": "╨Ф╨▓╤Г╤Е╤Б╨┐╨░╨╗╤М╨╜╨░╤П ╨║╤А╨╛╨▓╨░╤В╤М", "slug": "dvuhspalnaya-krovat", "description": "╨Ъ╤А╨╛╨▓╨░╤В╤М ╨┤╨▓╤Г╤Е╤Б╨┐╨░╨╗╤М╨╜╨░╤П, ╨╛╤А╤В╨╛╨┐╨╡╨┤╨╕╤З╨╡╤Б╨║╨░╤П ╤Б ╨╜╨░╨┤╨│╨╛╨╗╨╛╨▓╨╜╨╕╨║╨╛╨╝.", "image": "goods_images/double_bed.jpg", "price": "10000.00", "discount": "0.00", "quantity": 10, "category": 5}}, {"model": "goods.products", "pk": 4, "fields": {"name": "╨Ъ╤Г╤Е╨╛╨╜╨╜╤Л╨╣ ╤Б╤В╨╛╨╗ ╤Б ╤А╨░╨║╨╛╨▓╨╕╨╜╨╛╨╣", "slug": "kuhonnyj-stol-s-rakovinoj", "description": "╨Ъ╤Г╤Е╨╛╨╜╨╜╤Л╨╣ ╤Б╤В╨╛╨╗ ╨┤╨╗╤П ╨╛╨▒╨╡╨┤╨░ ╤Б ╨▓╤Б╤В╤А╨╛╨╡╨╜╨╜╨╛╨╣ ╤А╨░╨║╨╛╨▓╨╕╨╜╨╛╨╣ ╨╕ ╤Б╤В╤Г╨╗╤М╤П╨╝╨╕.", "image": "goods_images/kitchen_table.jpg", "price": "11000.00", "discount": "0.00", "quantity": 10, "category": 4}}, {"model": "goods.products", "pk": 5, "fields": {"name": "╨Ъ╤Г╤Е╨╛╨╜╨╜╤Л╨╣ ╤Б╤В╤Г╨╗", "slug": "kuhonnyj-stul", "description": "╨Ъ╤Г╤Е╨╛╨╜╨╜╤Л╨╣ ╤Б╤В╤Г╨╗ ╤Б 3 ╨╜╨╛╨╢╨║╨░╨╝╨╕(╨║╨╛╨╗╨╡╤Б╨╕╨║╨╕ ╨┐╨╛╨║╤Г╨┐╨░╤О╤В╤Б╤П ╨╛╤В╨┤╨╡╨╗╤М╨╜╨╛).", "image": "goods_images/chair_kitchen.jpg", "price": "5500.00", "discount": "15.00", "quantity": 20, "category": 4}}, {"model": "goods.products", "pk": 6, "fields": {"name": "╨г╨│╨╗╨╛╨▓╨╛╨╣ ╨┤╨╕╨▓╨░╨╜ ╨┤╨╗╤П ╨│╨╛╤Б╤В╨╕╨╜╨╜╨╛╨╣", "slug": "uglovoj-divan-dlya-gostinnoj", "description": "╨г╨│╨╗╨╛╨▓╨╛╨╣ ╨┤╨╕╨▓╨░╨╜, ╤А╨░╤Б╨║╨╗╨░╨┤╤Л╨▓╨░╨╡╤В╤Б╤П ╨▓ ╨┤╨▓╤Г╤Е╤Б╨┐╨░╨╗╤М╨╜╤Г╤О ╨║╤А╨╛╨▓╨░╤В╤М, ╨┤╨╗╤П ╨│╨╛╤Б╤В╨╕╨╜╨╜╨╛╨╣ ╨╕ ╨┐╤А╨╕╨╡╨╝╨░ ╨│╨╛╤Б╤В╨╡╨╣ ╤Б╨░╨╝╨╛╨╡ ╤В╨╛!", "image": "goods_images/corner_sofa.jpg", "price": "20000.00", "discount": "0.00", "quantity": 5, "category": 6}}, {"model": "goods.products", "pk": 7, "fields": {"name": "╨Я╤А╨╕╨║╤А╨╛╨▓╨░╤В╨╜╤Л╨╣ ╤Б╤В╨╛╨╗╨╕╨║", "slug": "prikrovatnyj-stolik", "description": "╨Я╤А╨╕╨║╤А╨╛╨▓╨░╤В╨╜╤Л╨╣ ╤Б╤В╨╛╨╗╨╕╨║ ╤Б ╨┤╨▓╤Г╨╝╤П ╨▓╤Л╨┤╨▓╨╕╨╢╨╜╤Л╨╝╨╕ ╤П╤Й╨╕╨║╨░╨╝╨╕ (╤Ж╨▓╨╡╤В╨╛╨║ ╨╜╨╡ ╨▓╤Е╨╛╨┤╨╕╤В ╨▓ ╨║╨╛╨╝╨┐╨╗╨╡╨║╤В).", "image": "goods_images/bedside_table.jpg", "price": "7000.00", "discount": "0.00", "quantity": 5, "category": 5}}, {"model": "goods.products", "pk": 8, "fields": {"name": "╨Ф╨╕╨▓╨░╨╜ ╨╛╨▒╤Л╨║╨╜╨╛╨▓╨╡╨╜╨╜╤Л╨╣", "slug": "divan-obyknovennyj", "description": "╨Ф╨╕╨▓╨░╨╜, ╨╛╨╜ ╨╢╨╡ ╤Б╨╛╤Д╨░ ╨╛╨▒╤Л╨║╨╜╨╛╨▓╨╡╨╜╨╜╨░╤П ╨╛╤З╨╡╨╜╤М ╤Г╨┤╨╛╨▒╨╜╨░╤П.", "image": "goods_images/sofa.jpg", "price": "9000.00", "discount": "10.00", "quantity": 10, "category": 6}}, {"model": "goods.products", "pk": 9, "fields": {"name": "╨Ю╤Д╨╕╤Б╨╜╤Л╨╣ ╤Б╤В╤Г╨╗", "slug": "ofisnyj-stul", "description": "╨Ю╤З╨╡╨╜╤М ╨┐╨╛╨┤╤Е╨╛╨┤╨╕╤В ╨┤╨╗╤П ╤А╨░╨▒╨╛╤В╤Л ╨▓ ╨╛╤Д╨╕╤Б╨╡.", "image": "goods_images/ofice_chambre.jpg", "price": "5000.00", "discount": "0.00", "quantity": 20, "category": 7}}, {"model": "goods.products", "pk": 10, "fields": {"name": "╨а╨╛╨╖╤Л", "slug": "rozy", "description": "╨а╨░╤Б╤В╨╡╨╜╨╕╨╡ ╨┤╨╗╤П ╤Г╨║╤А╨░╤И╨╡╨╜╨╕╤П ╨▓╨░╤И╨╡╨│╨╛ ╨╕╨╜╤В╨╡╤А╤М╨╡╤А╨░ ╨┐╨╛╨┤╨░╤А╨╕╤В ╨║╤А╨░╤Б╨╛╤В╤Г ╨╕ ╨▒╨╡╨╖╨╝╤П╤В╨╡╨╢╨╜╨╛╤Б╤В╤М ╨╛╨▒╤Б╤В╨░╨╜╨╛╨▓╨║╨╡.", "image": "goods_images/rose.jpg", "price": "1000.00", "discount": "20.00", "quantity": 30, "category": 9}}, {"model": "goods.products", "pk": 11, "fields": {"name": "╨б╤В╨╕╨╗╨╕╨╖╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▒╨░╨╝╨▒╤Г╨║", "slug": "stilizirovannyj-bambuk", "description": "╨Ф╨╕╨╖╨░╨╣╨╜╨╡╤А╤Б╨║╨╕╨╣ ╨▒╨░╨╝╨▒╤Г╨║ ╨┤╨╗╤П ╤Г╨║╤А╨░╤И╨╡╨╜╨╕╤П ╨▓╨░╤И╨╡╨│╨╛ ╨╕╨╜╤В╨╡╤А╤М╨╡╤А╨░.", "image": "goods_images/bambuka_5UvOzTe.jpg", "price": "1000.00", "discount": "0.00", "quantity": 30, "category": 9}}, {"model": "goods.products", "pk": 12, "fields": {"name": "╨ж╨▓╨╡╤В╨╛╨║", "slug": "flower", "description": "╨Ф╨╡╨║╨╛╤А╨░╤В╨╕╨▓╨╜╤Л╨╣ ╤Ж╨▓╨╡╤В╨╛╨║ ╨╗╨░╨╣╨╝╨╛╨│╨╛ ╤Ж╨▓╨╡╤В╨░, ╨╛╤З╨╡╨╜╤М ╨┐╨╛╨┤╨░╨╣╨┤╨╡╤В ╨┤╨╗╤П ╨┤╨╕╨╖╨░╨╣╨╜╨░ ╨▓╨░╤И╨╡╨│╨╛ ╨╕╨╜╤В╨╡╤А╤М╨╡╤А╨░.", "image": "goods_images/flower.jpg", "price": "1500.00", "discount": "5.00", "quantity": 10, "category": 9}}]
+[
+    {
+        "model": "goods.products",
+        "pk": 1,
+        "fields": {
+            "name": "Чайный столик и три стула",
+            "slug": "chajnyj-stolik-i-tri-stula",
+            "description": "Комплект из трёх стульев и дизайнерский столик для гостинной комнаты.",
+            "image": "goods_images/set_of_tea_table_and_three_chairs.jpg",
+            "price": "15000.00",
+            "discount": "5.00",
+            "quantity": 10,
+            "category": 6
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2,
+        "fields": {
+            "name": "Китайский столик и два стула",
+            "slug": "kitajskij-stolik-i-dva-stula",
+            "description": "Набор из стола и двух стульев в китайском стиле.",
+            "image": "goods_images/set_of_tea_table_and_two_chairs.jpg",
+            "price": "12000.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 6
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 3,
+        "fields": {
+            "name": "Двухспальная кровать",
+            "slug": "dvuhspalnaya-krovat",
+            "description": "Кровать двухспальная, ортопедическая с надголовником.",
+            "image": "goods_images/double_bed.jpg",
+            "price": "10000.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 4,
+        "fields": {
+            "name": "Кухонный стол с раковиной",
+            "slug": "kuhonnyj-stol-s-rakovinoj",
+            "description": "Кухонный стол для обеда с встроенной раковиной и стульями.",
+            "image": "goods_images/kitchen_table.jpg",
+            "price": "11000.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 5,
+        "fields": {
+            "name": "Кухонный стул",
+            "slug": "kuhonnyj-stul",
+            "description": "Кухонный стул с 4-мя ножками.",
+            "image": "goods_images/chair_kitchen.jpg",
+            "price": "5500.00",
+            "discount": "15.00",
+            "quantity": 20,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 6,
+        "fields": {
+            "name": "Угловой диван для гостинной",
+            "slug": "uglovoj-divan-dlya-gostinnoj",
+            "description": "Угловой диван, раскладывается в двухспальную кровать, для гостинной и приема гостей самое то!",
+            "image": "goods_images/corner_sofa.jpg",
+            "price": "20000.00",
+            "discount": "0.00",
+            "quantity": 5,
+            "category": 6
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 7,
+        "fields": {
+            "name": "Прикроватный столик",
+            "slug": "prikrovatnyj-stolik",
+            "description": "Прикроватный столик с двумя выдвижными ящиками (цветок не входит в комплект).",
+            "image": "goods_images/bedside_table.jpg",
+            "price": "7000.00",
+            "discount": "0.00",
+            "quantity": 5,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 8,
+        "fields": {
+            "name": "Диван обыкновенный",
+            "slug": "divan-obyknovennyj",
+            "description": "Диван, он же софа обыкновенная с удобными спинкой и подлакотниками.",
+            "image": "goods_images/sofa.jpg",
+            "price": "9000.00",
+            "discount": "10.00",
+            "quantity": 10,
+            "category": 6
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 9,
+        "fields": {
+            "name": "Офисный стул",
+            "slug": "ofisnyj-stul",
+            "description": "Очень подходит для важных совещаний.",
+            "image": "goods_images/ofice_chambre.jpg",
+            "price": "5000.00",
+            "discount": "0.00",
+            "quantity": 20,
+            "category": 7
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 10,
+        "fields": {
+            "name": "Розы",
+            "slug": "rozy",
+            "description": "Красивые розы для украшения вашего интерьера подарит красоту и безмятежность вашему дому.",
+            "image": "goods_images/rose.jpg",
+            "price": "1000.00",
+            "discount": "20.00",
+            "quantity": 30,
+            "category": 9
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 11,
+        "fields": {
+            "name": "Стилизированный бамбук",
+            "slug": "stilizirovannyj-bambuk",
+            "description": "Дизайнерский бамбук для украшения вашего интерьера.",
+            "image": "goods_images/bambuka_5UvOzTe.jpg",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 30,
+            "category": 9
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 12,
+        "fields": {
+            "name": "Калесики к офисному креслу",
+            "slug": "kalesiki-k-ofisnomu-kreslu",
+            "description": "Калесики к офисному креслу, продается в комплекте по 4 шт.",
+            "image": "goods_images/flower.jpg",
+            "price": "3000.00",
+            "discount": "5.00",
+            "quantity": 30,
+            "category": 9
+        }
+    }
+]

@@ -17,6 +17,9 @@ def login(request):
             if user:
                 auth.login(request, user)
                 messages.success(request, f"{username}, вы успешно зашли в аккаунт")
+# проверка на зарегестрированного
+                if request.POST.get('next', None):
+                    return HttpResponseRedirect(request.POST.get('next'))
                 return HttpResponseRedirect(reverse('main2:index'))
     else:
         form = UserLoginForm()

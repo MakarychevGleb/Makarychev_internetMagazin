@@ -1,9 +1,9 @@
 from django.contrib import auth
 from django.http import HttpResponseRedirect
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.urls import reverse
 
-from users.forms import UserLoginForm
+from users.forms import UserLoginForm, UserRegistrationForm
 # если данные валидны - верны то аутонтефицируемся перенаправляем
 #  authenticate - есть ли такой пользователь
 def login(request):
@@ -26,9 +26,19 @@ def login(request):
     return render(request, 'users/login.html', context)
 
 def registration(request):
+    if request.method == 'POST':
+        form = UserRegistrationForm(data=request.POST)
+        if form.is_valid():
+            form.save()
+            user = form.instance
+            auth.login(request, user)
+            return HttpResponseRedirect(reverse('main2:index'))
+    else:
+        form = UserRegistrationForm()
 
     context = {
         'title': 'ДомСтрой - Регистрация',
+        'form': form
     }
     return render(request, 'users/registration.html', context)
 
@@ -38,6 +48,7 @@ def profile(request):
         'title': 'ДомСтрой - Профиль',
     }
     return render(request, 'users/profile.html', context)
-
+# для выхода из пользователя i dr
 def logout(request):
-    pass
+    auth.logout(request)
+    return redirect(reverse('main2:index'))

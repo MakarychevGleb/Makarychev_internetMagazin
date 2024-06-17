@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 
-#from django.conf.global_settings import MEDIA_ROOT, MEDIA_URL
 from django.http import HttpResponseNotFound
 
 
@@ -46,6 +45,7 @@ INSTALLED_APPS = [
     'main2',
     'goods',
     'users',
+    'carts'
 ]
 
 MIDDLEWARE = [

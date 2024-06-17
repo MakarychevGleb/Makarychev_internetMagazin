@@ -10,7 +10,7 @@ class Categories(models.Model):
         db_table = "category"
         verbose_name = "Категорию"
         verbose_name_plural = "Категории"
-        ordering = ("id",)
+        # ordering = ("id",)
 
     def __str__(self):
         return self.name
@@ -29,7 +29,7 @@ class Products(models.Model):
         db_table = "product"
         verbose_name = "Продукт"
         verbose_name_plural = "Продукты"
-        ordering = ("id",)
+        # ordering = ("id",)
     
     def __str__(self):
         return f'{self.name} Количество - {self.quantity}'

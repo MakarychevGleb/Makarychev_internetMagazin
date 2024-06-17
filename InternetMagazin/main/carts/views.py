@@ -12,6 +12,7 @@ def cart_add(request):
     if request.user.is_authenticated:
         carts = Cart.objects.filter(user=request.user, product=product)
         if carts.exists():
+            # если прод есть + еще 1
             cart = carts.first()
             if cart:
                 cart.quantity += 1

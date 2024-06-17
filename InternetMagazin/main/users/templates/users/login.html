@@ -29,30 +29,6 @@
                         placeholder="Введите пароль" required>
                     </div>
 
-                    {% comment %} 2-oi variant {% for item in form %}
-                    <div class="mb-3">
-                        <label for="{{ item.id_for_label }}" class="form-label">{{ item.label }}</label>
-                        {{item}}
-                    </div>
-                    {% endfor %} {% endcomment %}
-
-                    <!-- 1-iy variant  <div class="mb-3">
-                        <label for="{{ form.username.id_for_label }}" class="form-label">Имя пользователя</label>
-                        {{form.username}}
-                    </div>
-                    <div class="mb-3">
-                        <label for="{{ form.password.id_for_label }}" class="form-label">Пароль</label>
-                        {{form.password}}
-                    </div>   -->
-
-                    {% comment %} <div class="mb-3">
-                        <label for="username" class="form-label">Имя пользователя</label>
-                        <input type="text" class="form-control" id="username" placeholder="Введите имя пользователя" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Пароль</label>
-                        <input type="password" class="form-control" id="password" placeholder="Введите пароль" required>
-                    </div>{% endcomment %}
                     <button type="submit" class="btn btn-dark btn-block">Войти</button> 
                 </form>
                 <div class="mt-3">

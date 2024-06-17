@@ -39,7 +39,6 @@ class Products(models.Model):
     
     def display_id(self):
         return f"{self.id:05}"
-    
 # просчитали скидки
     def sell_price(self):
         if self.discount:

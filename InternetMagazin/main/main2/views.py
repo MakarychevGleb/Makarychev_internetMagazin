@@ -1,7 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-
-# from goods.models import Categories
+from goods.models import Categories
 # Create your views here.
 
 def index(request):
@@ -16,7 +15,7 @@ def about(request):
     context = {
         'title': 'ДомСтрой - О нас',
         'content': 'О нас',
-        'text_on_page': 'Текст о нас'
+        'text_on_page': 'Текст о нашем сайте'
         
     }
     return render(request, 'main2/about.html', context)

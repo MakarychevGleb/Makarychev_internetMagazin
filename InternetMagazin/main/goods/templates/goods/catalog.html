@@ -7,12 +7,12 @@
 {% endblock  %}
 
 {% block content %}
-<!-- Контент на странице -->
+
 <div class="row">
-    <!-- Форма фильтров -->
+<!-- Форма фильтров -->
     <div class="dropdown mb-2">
-        <button class="btn btn-secondary dropdown-toggle btn-dark" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
+        <button class="btn btn-secondary dropdown-toggle btn-dark" type="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
             Фильтры
         </button>
 <!--  GET запрос через url не шифруется,
@@ -53,7 +53,6 @@
             <button type="submit" class="btn btn-primary mx-3 mt-3">Применить</button>
         </form>
     </div>
-
     {% if request.GET.q %}
     <h3 class="mt-4">Результаты поиска по запросу {{ request.GET.q }}</h3>
     {% if not goods %}
@@ -72,7 +71,6 @@
                     <img src="{% static 'deps/images/Not found image.png' %}" class="card-img-top" alt="...">
                 {% endif %}
                 <div class="card-body">
-
                     <a href="{% url "catalog:product" product.slug %}">
                         <h6 class="card-title">
                             {% autoescape off %}
@@ -82,14 +80,12 @@
                             {{ product.name }}
                             {% endif %}
                             {% endautoescape %}
-                            
                         </h6>
                     </a>
-                    
                     <p class="card-text">
                         {% autoescape off %}
                             {% if product.bodyline %}
-                            {{ product.bodyline }}
+                            {{ product.bodyline|truncatechars:100 }}
                             {% else %}
                             {{ product.description|truncatechars:30 }}
                             {% endif %}
@@ -117,9 +113,6 @@
             </div>
         </div>
     {% endfor %}
-
-
-
 </div>
 <!-- Пагинация -->
  {% if goods %}
@@ -129,9 +122,9 @@
                 <li class="page-item {% if not goods.has_previous %}disabled{% endif %}">
                 <a class="page-link" href="{% if goods.has_previous %}?{% change_params page=goods.previous_page_number%}{% else %}#{% endif %}">Назад</a>
                 </li>
-                <!--page_range - метод что вычисляет кол-во страниц что получатся в итоге -->
+            <!--page_range - метод что вычисляет кол-во страниц что получатся в итоге -->
                 {% for page in goods.paginator.page_range %}
-                <!--фильтр  что показывает кол-во страниц, что находятся по бокам -->
+        <!--фильтр  что показывает кол-во страниц, что находятся по бокам -->
                 {% if page >= goods.number|add:-2 and page <= goods.number|add:2 %}
                     <li class="page-item {% if goods.number == page %} active {% endif %}">
                         <a class="page-link" href="?{% change_params page=page %}">{{ page }}</a>
@@ -141,7 +134,6 @@
                 <li class="page-item {% if not goods.has_next %}disabled{% endif %}">
                     <a class="page-link" href="{% if goods.has_next %}?{% change_params page=goods.next_page_number %}{% else %}#{% endif %}">Вперед</a>
                 </li>
-
             </div>
         </ul>
     </nav>

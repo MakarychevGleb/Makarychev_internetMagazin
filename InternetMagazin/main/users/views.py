@@ -3,7 +3,8 @@ from django.contrib import auth, messages
 from django.http import HttpResponseRedirect
 from django.shortcuts import redirect, render
 from django.urls import reverse
-
+from django.db.models import Prefetch
+from orders.models import Order, OrderItem
 from carts.models import Cart
 from users.forms import ProfileForm, UserLoginForm, UserRegistrationForm
 # если данные валидны - верны то аутонтефицируемся перенаправляем
@@ -23,7 +24,11 @@ def login(request):
                 messages.success(request, f"{username}, вы успешно зашли в аккаунт")
 
                 if session_key:
-                    # add new authorized user carts from anonimous session
+                    # удалить старые корзины авторизованных пользователей
+                    forgot_carts = Cart.objects.filter(user=user)
+                    if forgot_carts.exists():
+                        forgot_carts.delete()
+                    # добавлять новые корзины авторизованных пользователей из анонимного сеанса
                     Cart.objects.filter(session_key=session_key).update(user=user)
                 
                 # проверка на зарегестрированного
@@ -66,18 +71,24 @@ def registration(request):
 @login_required
 def profile(request):
     if request.method == 'POST':
-        #  укажем для каого пользователя мы сохраняем изменения
         form = ProfileForm(data=request.POST, instance=request.user, files=request.FILES)
         if form.is_valid():
             form.save()
-            messages.success(request, "Профиль успешно обновлен")
-            return HttpResponseRedirect(reverse('users:profile'))
+            messages.success(request, "Профайл успешно обновлен")
+            return HttpResponseRedirect(reverse('user:profile'))
     else:
         form = ProfileForm(instance=request.user)
 
+    orders = Order.objects.filter(user=request.user).prefetch_related(
+                Prefetch(
+                    "orderitem_set",
+                    queryset=OrderItem.objects.select_related("product"),
+                )
+            ).order_by("-id")
     context = {
         'title': 'ДомСтрой - Профиль',
-        'form': form
+        'form': form,
+        'orders': orders,
     }
     return render(request, 'users/profile.html', context)
 

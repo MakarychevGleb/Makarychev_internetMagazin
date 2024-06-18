@@ -23,7 +23,7 @@ def catalog(request, category_slug=None):
     if order_by and order_by != "default":
         goods = goods.order_by(order_by)
 #количество отоброжаемых товаров на странице (4)
-    paginator = Paginator(goods, 4)
+    paginator = Paginator(goods, 6)
     current_page = paginator.page(int(page))
     context = {
         'title': 'ДомСтрой - Каталог',
